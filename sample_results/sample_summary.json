@@ -1,0 +1,47 @@
+{
+  "target": "192.168.186.128_20251014_100936",
+  "nmap": {
+    "hosts": [
+      {
+        "addresses": [
+          {
+            "addr": "192.168.186.128",
+            "addrtype": "ipv4"
+          },
+          {
+            "addr": "00:0C:29:D6:4C:37",
+            "addrtype": "mac",
+            "vendor": "VMware"
+          }
+        ],
+        "ports": [
+          {
+            "portid": "22",
+            "protocol": "tcp",
+            "state": {
+              "state": "open",
+              "reason": "syn-ack",
+              "reason_ttl": "64"
+            },
+            "service": {
+              "name": "ssh",
+              "product": "OpenSSH",
+              "version": "10.0p2 Debian 5",
+              "extrainfo": "protocol 2.0",
+              "ostype": "Linux",
+              "method": "probed",
+              "conf": "10"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "http": {
+    "https_headers.txt": "\u00ef\u00bb\u00bf[!] Failed headers for https://192.168.186.128\n",
+    "https_robots.txt": "\u00ef\u00bb\u00bfNo robots or failed to fetch\n",
+    "http_headers.txt": "\u00ef\u00bb\u00bf[!] Failed headers for http://192.168.186.128\n",
+    "http_robots.txt": "\u00ef\u00bb\u00bfNo robots or failed to fetch\n"
+  },
+  "dir": {}
+}
