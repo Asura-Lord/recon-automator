@@ -83,10 +83,13 @@ jq . results/<target_timestamp>/summary.json
 }
 
 ---
+```
+### Screenshot of the process (window)
+
 <img width="1917" height="757" alt="demo" src="https://github.com/user-attachments/assets/00b20f10-dd2e-4942-97cc-f33ef8eb14b9" />
 
 ---
-```
+
 🔭 Next-level ideas (grow this)
 ---
 
