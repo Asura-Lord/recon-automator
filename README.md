@@ -1,4 +1,4 @@
-# ⚡ recon-automator
+## ⚡ recon-automator
 
 **Lightweight, lab-only recon automation** — Nmap + HTTP checks + optional dir fuzzing → single `summary.json`.  
 Built for CTFs, learning, and defensive detection practice. **Run only in isolated VMs.**
@@ -39,7 +39,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force   # 
 python parse_results.py --input .\results\<target_timestamp> --output .\results\<target_timestamp>\summary.json
 Get-Content .\results\<target_timestamp>\summary.json | Out-Host
 
----
+
 ```
 ### 🐧 Quickstart — Linux / Kali (Bash)
 ---
@@ -91,7 +91,7 @@ jq . results/<target_timestamp>/summary.json
 ```
 🔭 Next-level ideas (grow this)
 ---
-``
+
 
 HTML report generator from summary.json (Streamlit / Flask)
 
@@ -101,7 +101,8 @@ Parsers for ffuf, gobuster, nuclei and HTML reports
 
 CI check to validate summary.json format
 
-```
+---
+
 ⚖️ Responsible use
 ---
 
