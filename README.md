@@ -58,7 +58,7 @@ Get up and running with recon-automator in just a few steps!
 3. **Run the recon script:**  
    Replace `<IP>` with your target machine’s IP address.
    ```powershell
-   .\recon.ps1 -Target <IP> -Dir -OutputFolder results\latest
+   .\recon.ps1 -Target <IP> -dir 
    ```
 4. **Get your summary:**
    ```powershell
@@ -86,7 +86,7 @@ Get up and running with recon-automator in just a few steps!
 4. **Run the recon script:**  
    Replace `<IP>` with your target machine’s IP address.
    ```bash
-   ./recon.sh --target <IP> --dir --wordlist /usr/share/wordlists/dirb/common.txt --output-folder results/latest
+   ./recon.sh --target <IP> --dir --wordlist /usr/share/wordlists/dirb/common.txt 
    ```
 5. **Get your summary:**
    ```bash
