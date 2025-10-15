@@ -50,7 +50,7 @@ chmod +x recon.sh
 ./recon.sh --target <IP> --dir --wordlist /usr/share/wordlists/dirb/common.txt
 python3 parse_results.py --input results/<target_timestamp> --output results/<target_timestamp>/summary.json
 jq . results/<target_timestamp>/summary.json
----
+
 ```
 ### 🧾 Example output ( summary.json)
 ---
@@ -100,7 +100,7 @@ Slack/Discord webhook dry-run notifier (lab-only)
 Parsers for ffuf, gobuster, nuclei and HTML reports
 
 CI check to validate summary.json format
----
+
 ```
 ⚖️ Responsible use
 ---
