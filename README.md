@@ -40,37 +40,72 @@ _Built for CTFs, learning, and defensive detection practice. **Run only in isola
 
 ## 🚀 Quickstart
 
+Get up and running with recon-automator in just a few steps!
+
+---
+
 ### 🪟 Windows (PowerShell)
 
-```powershell
-git clone https://github.com/Asura-Lord/recon-automator.git
-cd recon-automator
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force   # one-time
-.\recon.ps1 -Target <IP> -Dir
-python parse_results.py --input .\results\<target_timestamp> --output .\results\<target_timestamp>\summary.json
-Get-Content .\results\<target_timestamp>\summary.json | Out-Host
-```
+1. **Download the tool:**
+   ```powershell
+   git clone https://github.com/Asura-Lord/recon-automator.git
+   cd recon-automator
+   ```
+2. **Enable script execution (one-time step):**
+   ```powershell
+   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
+   ```
+3. **Run the recon script:**  
+   Replace `<IP>` with your target machine’s IP address.
+   ```powershell
+   .\recon.ps1 -Target <IP> -Dir -OutputFolder results\latest
+   ```
+4. **Get your summary:**
+   ```powershell
+   python parse_results.py --input .\results\latest --output .\results\latest\summary.json
+   Get-Content .\results\latest\summary.json | Out-Host
+   ```
 
 ---
 
 ### 🐧 Linux / Kali (Bash)
 
-```bash
-git clone https://github.com/Asura-Lord/recon-automator.git
-cd recon-automator
-chmod +x recon.sh
-./recon.sh --target <IP> --dir --wordlist /usr/share/wordlists/dirb/common.txt
-python3 parse_results.py --input results/<target_timestamp> --output results/<target_timestamp>/summary.json
-jq . results/<target_timestamp>/summary.json
-```
+1. **Download the tool:**
+   ```bash
+   git clone https://github.com/Asura-Lord/recon-automator.git
+   cd recon-automator
+   ```
+2. **Make the script executable (one-time step):**
+   ```bash
+   chmod +x recon.sh
+   ```
+3. **Install jq (for pretty output):**
+   ```bash
+   sudo apt update && sudo apt install -y jq
+   ```
+4. **Run the recon script:**  
+   Replace `<IP>` with your target machine’s IP address.
+   ```bash
+   ./recon.sh --target <IP> --dir --wordlist /usr/share/wordlists/dirb/common.txt --output-folder results/latest
+   ```
+5. **Get your summary:**
+   ```bash
+   python3 parse_results.py --input results/latest --output results/latest/summary.json
+   jq . results/latest/summary.json
+   ```
 
+---
+
+**That’s it!**  
+All your results are saved in `results/latest` for easy access.  
+Only use this tool in lab environments you own or have permission to scan.
 ---
 
 ## 🧾 Example output (`summary.json`)
 
 ```json
 {
-  "target": "192.168.186.128_20251014_100936",
+  "target": "192.168.186.128_latest",
   "nmap": {
     "hosts": [
       {
