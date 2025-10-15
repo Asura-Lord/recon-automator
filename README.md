@@ -83,9 +83,7 @@ jq . results/<target_timestamp>/summary.json
 }
 
 ---
-<p align="center">
-  <img src=".sample_results/demo.png" width="850" alt="demo run"/>
-</p>
+<img width="1917" height="757" alt="demo" src="https://github.com/user-attachments/assets/00b20f10-dd2e-4942-97cc-f33ef8eb14b9" />
 
 ---
 ```
