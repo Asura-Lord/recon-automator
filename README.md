@@ -31,7 +31,7 @@ This project is for lab environments only (VMware/VirtualBox, isolated networks,
 ---
 
 ### 🚀 Quickstart — Windows (PowerShell)
-
+```
 git clone https://github.com/Asura-Lord/recon-automator.git
 cd recon-automator
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force   # one-time
@@ -40,8 +40,10 @@ python parse_results.py --input .\results\<target_timestamp> --output .\results\
 Get-Content .\results\<target_timestamp>\summary.json | Out-Host
 
 ---
+```
 ### 🐧 Quickstart — Linux / Kali (Bash)
-'''
+---
+```
 git clone https://github.com/Asura-Lord/recon-automator.git
 cd recon-automator
 chmod +x recon.sh
@@ -49,9 +51,10 @@ chmod +x recon.sh
 python3 parse_results.py --input results/<target_timestamp> --output results/<target_timestamp>/summary.json
 jq . results/<target_timestamp>/summary.json
 ---
-
+```
 ### 🧾 Example output ( summary.json)
-'''
+---
+```
 {
   "target": "192.168.186.128_20251014_100936",
   "nmap": {
@@ -85,7 +88,10 @@ jq . results/<target_timestamp>/summary.json
 </p>
 
 ---
+```
 🔭 Next-level ideas (grow this)
+---
+```
 
 HTML report generator from summary.json (Streamlit / Flask)
 
@@ -95,14 +101,17 @@ Parsers for ffuf, gobuster, nuclei and HTML reports
 
 CI check to validate summary.json format
 ---
-
+```
 ⚖️ Responsible use
-
-This repo is an educational tool. Always have permission before scanning. Use snapshots, isolated networks, and follow rules of engagement.
 ---
 
-🧾 License & contact
+This repo is an educational tool. Always have permission before scanning. Use snapshots, isolated networks, and follow rules of engagement.
 
+---
+'''
+🧾 License & contact
+---
+'''
 MIT — see LICENSE.
 Maintained by Asura-Lord — https://github.com/Asura-Lord
 
