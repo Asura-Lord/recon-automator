@@ -6,19 +6,7 @@
 > Lightweight, **lab-only** recon automation — Nmap + HTTP checks + optional dir fuzzing → single `summary.json`.  
 > Built for CTFs, learning, and defensive detection practice. Run only in isolated VMs.
 
----
 
-markdown
-Copy code
-____                 _             
-| _ \ ___ ___ _ | | ___ _ __
-| |) / _ / | | | | |/ _ | ' \
-| _ < /_ \ || | | () | | | |
-|| __||/_,||___/|| |_|
-recon-automator v1.0
-
-yaml
-Copy code
 
 ---
 
