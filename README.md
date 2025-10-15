@@ -91,7 +91,7 @@ jq . results/<target_timestamp>/summary.json
 ```
 🔭 Next-level ideas (grow this)
 ---
-```
+``
 
 HTML report generator from summary.json (Streamlit / Flask)
 
@@ -108,10 +108,10 @@ CI check to validate summary.json format
 This repo is an educational tool. Always have permission before scanning. Use snapshots, isolated networks, and follow rules of engagement.
 
 ---
-'''
+
 🧾 License & contact
 ---
-'''
+
 MIT — see LICENSE.
 Maintained by Asura-Lord — https://github.com/Asura-Lord
 
