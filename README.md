@@ -84,7 +84,7 @@ jq . results/<target_timestamp>/summary.json
 
 ---
 <p align="center">
-  <img src="./docs/demo.png" width="850" alt="demo run"/>
+  <img src=".sample_results/demo.png" width="850" alt="demo run"/>
 </p>
 
 ---
