@@ -31,7 +31,7 @@ This project is for lab environments only (VMware/VirtualBox, isolated networks,
 ---
 
 ### 🚀 Quickstart — Windows (PowerShell)
-```
+
 git clone https://github.com/Asura-Lord/recon-automator.git
 cd recon-automator
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force   # one-time
